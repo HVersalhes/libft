@@ -10,7 +10,7 @@
  * Retorna NULL caso a alocação falhe ou se 's' for NULL.
  * A substring está sempre terminada em '\0'.
  */
-char	*ft_sbustr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	s_len;
 	size_t	substr_len;
