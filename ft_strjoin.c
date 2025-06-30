@@ -1,0 +1,28 @@
+#include "libft.h"
+/**
+ * ft_strjoin - Concatena duas strings em uma nova string alocada.
+ * @s1: String de prefixo.
+ * @s2: String de sufixo.
+ *
+ * Retorna um ponteiro para a nova string resultante da concatenação de s1 e s2.
+ * Retorna NULL em caso de erro de alocação ou se algum argumento for NULL.
+ * A nova string está sempre terminada em '\0'.
+ */
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	size_t	len1;
+	size_t	len2;
+	char	*result;
+
+	if (!s1 || !s2)
+		return (NULL);
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	result = (char *)malloc(len1 + len2 + 1);
+	if (!result)
+		return (NULL);
+	ft_memcpy(result, s1, len1);
+	ft_memcpy(result + len1, s2, len2);
+	result[len1 + len2] = '\0';
+	return (result);
+}
