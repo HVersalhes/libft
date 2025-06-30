@@ -22,3 +22,14 @@ e que o meu codigo sirva de exemplo e apoio didatico e motivacional para
 outros programadores ao redor do mundo
 
 Hélder Costa aos - 25 de junho de 2025
+
+
+hoje dia 30 de junho terminei finalmente a minha libft
+e criei um testador iterativo
+
+Para que eu não esqueça vou colocar as instruções de uso aqui
+Compile sua libft normalmente (make)
+Compile o teste:
+gcc test_libft_interativo.c -I. -L. -lft -o test_libft_interativo
+Execute:
+./test_libft_interativo
