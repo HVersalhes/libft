@@ -1,0 +1,35 @@
+Olá eu sou o Helder Costa 
+tenho 28 anos de idade
+estou na minha Jornada como Cadete da escola 42
+propriamente da escola 42 Luanda 
+Estou concretizando um sonho que é fazer parte de uma comunidade de desenvolvedores
+Talentosos e com o objetivo de sermos Programadores de Elite 
+
+Este é o documento oficial da minha libft, a minha biblioteca pessoal
+o meu objetivo é construir ela do zero, aprender a manipular amplamente cada uma das
+funções que vou inserir dentro dela e posteriormente , com o crescer do meu aprendizado
+expandir cada vez mais ela com funções da minha autoria que vão facilitar o meu
+aprendizado, o meu desenvolvimento, e a minha compreensão da linguagem C que será a base 
+da minha Biblioteca libft
+
+O meu objetivo além de aprender a usar cada função que me será pedida para criar
+também será aperfeiçoar , potencializar, e proteger elas contra erros comuns 
+e normais nas funções originais que vou replicar
+
+este documento servirá de log para cada atualização que eu fizer na biblioteca 
+hoje é o inicio da criação dela e pretendo me sair de forma excepcional
+e que o meu codigo sirva de exemplo e apoio didatico e motivacional para 
+outros programadores ao redor do mundo
+
+Hélder Costa aos - 25 de junho de 2025
+
+
+hoje dia 30 de junho terminei finalmente a minha libft
+e criei um testador iterativo
+
+Para que eu não esqueça vou colocar as instruções de uso aqui
+Compile sua libft normalmente (make)
+Compile o teste:
+gcc test_libft_interativo.c -I. -L. -lft -o test_libft_interativo
+Execute:
+./test_libft_interativo
