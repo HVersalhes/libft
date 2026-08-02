@@ -1,20 +1,19 @@
 #include "libft.h"
-/*
- * Se o tamanho do destino for maior que zero,
- * vamos copiar cada caractere da origem para o destino, um a um,
- * até encontrarmos o fim da string de origem ou até quase encher o destino.
- * O objetivo é sempre deixar espaço para colocar o '\0' no final da string de destino.
- */
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	len;
 
-	if (!src || !dst)
+	if (!src)
+		return (0);
+	if (!dst && size == 0)
+		return (ft_strlen(src));
+	if (!dst)
 		return (0);
 	len = 0;
-	if (dstsize > 0)
+	if (size > 0)
 	{
-		while (src[len] && len < dstsize -1)
+		while (src[len] && len < size - 1)
 		{
 			dst[len] = src[len];
 			len++;

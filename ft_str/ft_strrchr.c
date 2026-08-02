@@ -4,18 +4,16 @@ char	*ft_strrchr(const char *s, int c)
 {
 	char	*last;
 
-	last = NULL;
 	if (!s)
 		return NULL;
+	last = NULL;
 	while (*s)
 	{
 		if (*s == (char)c)
-		{
 			last = (char *)s;
-		}
 		s++;
 	}
-	if ((char)c == '\0')
+	if (*s == (char)c)
 		return ((char *)s);
 	return (last);
 }

@@ -13,21 +13,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*found;
-
-	found = NULL;
 	if (!s)
-		return (0);
-	while (*s)
+		return (NULL);
+	while (*s != (char)c)
 	{
-		if (*s == (char)c)
-		{
-			found = (char *)s;
-			break;
-		}
+		if (*s == '\0')
+			return (NULL);
 		s++;
-	}
-	if ((char)c == '\0')
-		found = (char *)s;
-	return (found);
+	}`
+	return ((char *)s);
 }
